@@ -1,0 +1,26 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net7.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="View\online.png" />
+    <None Remove="View\password.png" />
+    <None Remove="View\usericon.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\ChatCommon\ChatCommon.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="View\online.png" />
+    <Resource Include="View\password.png" />
+    <Resource Include="View\usericon.png" />
+  </ItemGroup>
+
+</Project>
